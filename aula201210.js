@@ -187,6 +187,60 @@ const imprimeDesusturuturacao = () => {
 
 imprimeDesusturuturacao()
 
+//exercicio ju
+const movimentacaoBancaria = [2500, -300, 400, -200, -80, -75, 250, -180, 290, -960, -240];
+
+const saldo1 = movimentacaoBancaria.reduce((acumulador, valor) => acumulador + valor, 0)
+console.log(saldo1);
+
+
+const saldo = movimentacaoBancaria.reduce((acumulador, valor) => {
+    if (valor > 0) {
+        acumulador.entradas += valor;
+    } else {
+        acumulador.saidas += valor;
+    }
+
+    acumulador.saldo = acumulador.entradas + acumulador.saidas;
+    return acumulador
+
+}, {entradas: 0, saidas: 0, saldo: 0})
+
+console.log(saldo);
+
+
+
+const saldo2 = movimentacaoBancaria.reduce((acumulador, valor) => {
+//    if (valor > 0) {
+//        acumulador.entradas += valor;
+//    } else {
+//       acumulador.saidas += valor;
+//    }
+
+// abaixo tem a mesma coisa em if ternario
+    
+    valor > 0 ? acumulador.entradas += valor:acumulador.saidas += valor
+
+    acumulador.saldo2 = acumulador.entradas + acumulador.saidas;
+    return acumulador
+
+}, { saldo2: 0, entradas: 0, saidas: 0})
+
+console.log(saldo2);
+
+
+// const {saldo: total, entradas, saidas} = saldo2;
+ const {saldo: total, ...acumuladere} = saldo2;
+
+
+console.log(saldo2);
+
+
+
+
+
+
+
 
 
 
