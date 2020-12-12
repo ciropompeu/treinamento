@@ -111,8 +111,151 @@ let frutas = ["maca", "pera", "morango"];
 console.log(frutas.includes("morango"));
 console.log(frutas.includes("chinelo"));
 
+// exercicios indexOf
+
+let alunos = ["João", "Pedro", "Jorge", "Francisco"];
+
+let indiceJoao = alunos.indexOf("João");
+let indiceFrancisco = alunos.indexOf("Francisco");
+
+console.log(indiceJoao);
+console.log(indiceFrancisco);
+
+// exercicio Join
 
 
+let arrayFrase = [
+    "Não",
+    "fracassei,",
+    "simplesmente",
+    "encontrei",
+    "dez",
+    "mil",
+    "soluções",
+    "equivocadas"
+]
+
+let fraseNova = arrayFrase.join(" ");
+console.log(fraseNova);
+
+// exercicio pop
+
+let estudantes1 = [
+    {
+        nome: "Álvaro",
+        media: 9,
+        curso: "Android"
+    },
+    {
+        nome: "Daniel",
+        media: 6,
+        curso: "Full Stack"
+    },
+    {
+        nome: "Alexis",
+        media: 3,
+        curso: "iOS"
+    }
+];
+
+let alunoFormado = estudantes1.pop();
+
+console.log(alunoFormado);
+
+// exercicio push
+
+let estudantes2 = [
+    {
+        nome: 'Álvaro',
+        media: 9,
+        curso: 'Android',
+    },
+    {
+        nome: 'Daniel',
+        media: 6,
+        curso: 'Full Stack',
+    }
+]
+
+let aluno1 = {
+    nome: "João",
+    media: 5,
+    curso: "iOS"
+}
+
+let aluno2 = {
+    nome: "Miguel",
+    media: 2,
+    curso: "Android"
+}
+console.log(estudantes2)
+estudantes2.push(aluno1, aluno2);
+console.log(estudantes2)
+
+
+// exercicio shift
+
+let estudantes3 = [
+    {
+       nome: 'Álvaro',
+       media : 9,
+       curso : 'Android',
+     },
+      {
+        nome: 'Daniel',
+        media : 6,
+        curso : 'Full Stack',
+      },
+      {
+        nome: 'Alexis',
+        media : 3,
+        curso : 'iOS',
+      },
+    ]
+
+    console.log(estudantes3);
+    let alunoDesistente = estudantes3.shift();
+    console.log(estudantes3);
+
+
+    //
+
+
+
+// exercicio unshift
+
+let estudantes = [
+    {
+      nome: 'Alvaro',
+      media : 9,
+      curso : 'Android',
+    },
+    {
+      nome: 'Daniel',
+      media : 6,
+      curso : 'Full Stack',
+    },
+    {
+      nome: 'Alexis',
+      media : 3,
+      curso : 'iOS',
+    }
+  ]
+
+let aluna1 = {
+    nome: "Mariana",
+    media: 9,
+    curso: "Full Stack"
+}
+let aluna2 = {
+    nome: "Francisco",
+    media: 2,
+    curso: "Android"
+}
+
+console.log(estudantes);
+estudantes.unshift(aluna1,aluna2);
+console.log(estudantes);
 
 
 
