@@ -33,3 +33,19 @@ console.log(palavra);
 
 // replace - substituir uma parte do texto - tem dois parametros (o primeiro é o que precisa ser tirado, o segundo e o que precisa ser recolocado)
 
+//trim 
+let texto1 = "       ola mundo"
+console.log(texto1);
+console.log(texto1.trim());
+console.log(texto1);
+
+// split - converter o que é o texto em um array
+
+console.log(texto.split());
+console.log(texto.split(" "));
+console.log(texto.split("v"));
+
+// replaces
+
+let textoNovo = texto.replace("vinicius","claiton")
+console.log(textoNovo);
