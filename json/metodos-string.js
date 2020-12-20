@@ -49,3 +49,60 @@ console.log(texto.split("v"));
 
 let textoNovo = texto.replace("vinicius","claiton")
 console.log(textoNovo);
+
+let textoNome = "jose maria joao vinicuis jose ignacio luis jose";
+console.log(textoNome);
+console.log(textoNome.replace("jose","matilde"));
+// para trocar todos tem que usar /palavra/g
+// para trocar todos independente de como esta escrito /palavra/gi
+console.log(textoNome.replace(/jose/g,"matilde"));
+
+// exercicios completar url
+
+let palavra1 = "www.teste.com.br"
+let prefixo = "http://"
+
+function dominio(palavra1){
+
+    return prefixo + palavra1;
+
+}
+
+console.log(dominio(palavra1));
+
+// contas letras palavras
+
+let texto2 = "inconstitucionalissimamente";
+console.log(texto2.length)
+
+// substituicao rapida
+
+let frase = "boa tarde";
+let palavra2 = "tarde";
+let troca = "noite";
+
+function substituicaoRapida(frase,palavra2,troca){
+    return frase.replace(palavra2, troca)
+}
+
+console.log(substituicaoRapida(frase,palavra2,troca));
+
+// exerciocio menciona na frase (booleano)
+
+let texto = 'Existem muitas linguagens de programação e javascript é uma delas';
+let palavra = 'programação';
+function menciona(texto,palavra){
+    return texto.indexOf(palavra)>=0;
+}
+console.log(menciona(texto,palavra));
+
+// exercicio apenas o nome
+
+let frase = "Olá, sou Carlos!";
+let nomeUsuario = frase.slice(frase.indexOf("Carlos"),frase.indexOf("!"));
+
+console.log(frase.indexOf("Carlos"));
+console.log(frase.indexOf("!"));
+
+console.log(nomeUsuario);
+
