@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+<head>
+    <title>saudacao</title>
+</head>
+
+<body>
+
+    Saudação <button onclick="saudacao()">clique para receber uma saudação</button>
+
+    <p id="demo"></p>
+
+<script>
+const data = new Date();
+const hora = ('0'+ data.getHours()).slice(-2);
+const minutos = ('0'+ data.getMinutes()).slice(-2);
+const horaCompleta = hora + "h" + minutos;
+
+    const saudacao = () => {
+        
+        let resultado;
+        
+        if (hora > 4 && hora < 12) {
+            resultado = "Bom dia, agora são: " + horaCompleta;
+        } else if (hora > 12 && hora < 18) {
+            resultado = "Boa tarde, agora são: " + horaCompleta;
+        } else {
+            resultado = "Boa noite, agora são: " + horaCompleta;
+        }
+        document.getElementById("demo").innerHTML = resultado;
+    }
+</script>
+
+</body>
+
+</html>
