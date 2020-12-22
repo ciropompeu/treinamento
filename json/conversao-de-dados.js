@@ -45,7 +45,11 @@ console.log(typeof(textoNovoNumber));
 let numeroNovoNumber = Number(textoNovoNumber);
 console.log(typeof(numeroNovoNumber));
 
-//
+// parseFloat - retorna numeros decimais
+
+let parseF = '56.7-f-25.8';
+let numeroParseF = parseFloat(parseF);
+console.log(numeroParseF); // vai retornar um numero decimal ate o primeiro caractere alfanumerico
 
 // funcao chamada String() parecida com a funcao Number()
 // converter numero em texto

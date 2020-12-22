@@ -10,22 +10,22 @@
 
 <body>
 
-    Contador de caracteres <button onclick="myFunction()">clique e digite uma frase</button>
+    Contador de caracteres <button onclick="contador()">clique e digite uma frase</button>
 
     <p id="demo"></p>
 
-    <script>
-        function myFunction() {
-            let resultado;
-            let frase = prompt("Digite uma frase:");
+<script>
+    function contador() {
+        let resultado;
+        let frase = prompt("Digite uma frase:");
 
-            if (frase != null) {
-                resultado = "a frase '<b>" + frase + "</b>' tem '<b>" + frase.length + "</b>' caracteres" + "<br>" + 
-                "a frase '<b>" + frase.replace(/ /g,"") + "</b>' sem espaços tem '<b>" + frase.replace(/ /g,"").length + "</b>' caracteres";
-                document.getElementById("demo").innerHTML = resultado;
-            }
+        if (frase != null) {
+            resultado = "a frase '<b>" + frase + "</b>' tem '<b>" + frase.length + "</b>' caracteres" + "<br>" + 
+            "a frase '<b>" + frase.replace(/ /g,"") + "</b>' sem espaços tem '<b>" + frase.replace(/ /g,"").length + "</b>' caracteres";
+            document.getElementById("demo").innerHTML = resultado;
         }
-    </script>
+    }
+</script>
 
 </body>
 
