@@ -51,7 +51,37 @@ const somar = (a,b) => a+b;
 console.log('somar: '+somar(2,132));
 
 const horaAtual = () =>{
-    let data = new Date();
-    return data.getHours() + ":" + data.getMinutes();
+    let valor = new Date();
+    return valor.getHours() + ":" + valor.getMinutes();
 }
 console.log('horaAtual: '+horaAtual());
+
+// saudacao
+
+const data = new Date();
+const hora = data.getHours();
+const horaCompleta = hora + "h" + data.getMinutes();
+
+/*
+
+números completo
+const data = new Date();
+const hora = ('0'+ data.getHours()).slice(-2);
+const minutos = ('0'+ data.getMinutes()).slice(-2);
+const horaCompleta = hora + "h" + minutos;
+
+*/
+
+const saudacao = () => {
+
+    if (hora > 4 && hora < 12) {
+        console.log("Bom dia, agora são: " + horaCompleta);
+    } else if (hora > 12 && hora < 18) {
+        console.log("Boa tarde, agora são: " + horaCompleta);
+    } else {
+        console.log("Boa noite, agora são: " + horaCompleta);
+    }
+
+}
+
+saudacao();
