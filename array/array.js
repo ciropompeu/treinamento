@@ -101,6 +101,17 @@ console.log(pessoa.indexOf("vinicius"));
 console.log(pessoa.indexOf("vinicius"));
 console.log(pessoa.lastIndexOf("vinicius"));
 
+// indexof vai retornar o primeiro que encontrar
+// se houver repetido, vai mostrar apenas o primeiro
+// lastindexof vai retornar o primeiro que encontrar de trás para frente
+// desta forma, mesmo que tiver algum repetido, vai mostrar o último
+
+var clubes = ["a","f","c","d","e","f","g"]
+
+console.log(clubes.indexOf("f")); // retorna 1
+console.log(clubes.lastIndexOf("f")); // retorna 5
+
+
 //join - vai transformar array dentro de uma string
 console.log(pessoa.join());
 console.log(pessoa.join("-"));
