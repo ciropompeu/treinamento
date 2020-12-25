@@ -48,3 +48,12 @@ var metodoFind = numerosPares.find(function(valor){
 })
 console.log("find(): retorna o primeiro valor que encontrar")
 console.log(metodoFind);
+
+//exercicio
+// a partir de uma coleção de números, criar nova estrutura apenas com os maiores de 18
+
+let numeros = [12, 34, 22, 46, 18, 29, 44, 43, 39];
+
+let maiores = numeros.filter(function(valor){return valor>18})
+
+console.log(maiores);
