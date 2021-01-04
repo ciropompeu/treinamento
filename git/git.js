@@ -13,11 +13,13 @@ git add . // adiciona todas as modificações
 git commit -m "mensagem" // comita(salva) as modificações feitas
 git push origin master // envia as modificações ao repositório remoto
 
+git --version // para ver se o git foi instalado corretamente e informa a versão do git instalada
+
 /*  documentação
 
+site oficial - git-scm.com
 dev.to/t/git
 oshitgit.com
-git-scm.com
 
 */
 
