@@ -68,7 +68,91 @@ git commit -m "texto de commit"
 // enviar os arquivos para o repositório
 git push origin master 
 
-
 // antes de fazer o push precisa do git add e de um git com o commit
+
+// é recomendável fazer um commit depois de uma série de alterações e funcionalidades importantes
+// e também seja uma versão estável
+
+
+
+// baixa arquivos do repositório remoto para o repositório local
+git clone https://github.com/ciropompeu/treinamento.git // colocar a url do projeto
+
+// o ls é uma outra forma de usar o dir no github
+ls // mostra o que é diretório e o que é arquivo
+ls -lha // mostra também as permissões e informações dos arquivos
+
+//como manter os arquivos sincronizados
+git pull origin master // não vai baixar os arquivos e apenas sincronizá-los ou atualizá-los
+
+
+
+// branch - ramificação
+// cópia alternativa até o momento
+
+git branch bugfix45 // cria uma branch com nome bugfix
+git checkout bugfix45 // começa a trabalhar a branch bugfix
+
+git checkout -b bugfix // executa as duas funções citadas acima cria a branch e começa a trabalhar nela
+
+git branch //lista as branches do repositório local
+git branc -a // lista as branches do repositório logal e remoto
+
+
+git log     // listar os históricos de commit
+            // esse comando exibe nome do autor, data, hora da realização do commit e o código hash
+
+// o head é uma referência ao estado atual do seu repositório
+// é comum que esteja apontando para o último commit
+
+git checkout bugfix45   // podemos utilizar o comango git checkout para mover o head do repositório para qualquer branch
+git checkout a6de24     // podemos usar o chegou para mover a head para qualquer commit
+
+
+/* para saber mais
+
+conceitos de uso de branch
+learngitbranching.js.org/?locate=pt_br
+
+um guia ilustrado do comportamento do projeto usando gatinhos
+girliemac.com/blog/2017/12/26/git-purr/
+
+*/
+
+// desfazendo mudanças
+
+git checkout -- <nomedoarquivo> // para desfazer as mudanças que não foram adicionadas ao stage
+git checkout HEAD -- <nomedoarquivo> // para desfazer as mudanças dos arquivos no stage, mas não commitadas
+
+// git revert
+
+git revert <HASH-DE-COMMIT-ANTERIOR> // cria um novo commit revertendo as alterações feitas até o commit especificado
+git revert a6de24
+
+// git reset --hard
+
+git reset --hard <HASH-DE-COMMIT> // move o apontador da branch para um outro commit
+git reset --hard 45e465
+
+
+// unindo branches
+
+git merge <OUTRA_BRANCH> // tenta criar um novo commit unindo a branch atual a uma outra branch
+git merge bugfix45
+
+// git rebase
+
+git rebase <outra_branch> // emenda o branch atual sobre a outra branch
+git rebase bugfix45
+
+
+// conflitos
+// as operações de união de branches podem provocar conflitos: ocorre quando o mesmo arquivo tem a mesma parte diferente nas duas branches
+
+git merge bugfix45 // o git não cria o commit de unição, ao invés disso ele cra um arquivo mostrando o conflito entre as versões e sugerindo uma solução
+
+
+git add arquivoDoConflito.js 
+
 
 
