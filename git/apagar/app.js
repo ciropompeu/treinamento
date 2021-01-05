@@ -1,1 +1,0 @@
-let energumino = "foi quem ensinou"
