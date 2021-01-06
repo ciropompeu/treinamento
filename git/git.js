@@ -39,6 +39,10 @@ git remote -v   // para verificar se o link foi criado corretamente
                 // fetch de onde vai trazer as informações
                 // push para onde vou enviar as informações
 
+// para remover um remote
+git remote rm <remote-name>
+git remote rm origin
+
 // adicionar arquivos
 // commit pequeno histórico com data hora e assinatura do autor
 
