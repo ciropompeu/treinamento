@@ -18,8 +18,36 @@ for (const numeros of valores) {
 }
 
 // exercício 2 - enunciado:
-// Criar um array com  objetos que contenham nome e data de nascimento, após criar uma arrow function que faça primeiramente a desestruturação do array pela pessoa2 e depois desestruture o objeto para capturar o nome da pessoa.. Imprimir o nome da pessoa no console.
+// Criar um array com  objetos que contenham nome e data de nascimento,
+// após criar uma arrow function que faça primeiramente a desestruturação do array pela pessoa2
+// e depois desestruture o objeto para capturar o nome da pessoa.
+// Imprimir o nome da pessoa no console.
 
 */
+
+
+let colecao = [
+    {
+        nome: 'caro',
+        nascimento: 07 / 07 / 1977
+    }, {
+        nome: 'cero',
+        nascimento: 08 / 08 / 1988
+    }, {
+        nome: 'ciro',
+        nascimento: 09 / 09 / 1999
+    }
+
+]
+
+let teco = (valor) => {
+    let [, pessoa2] = valor;
+    let { nome: resultado } = pessoa2;
+    return resultado;
+}
+
+console.log(teco(colecao));
+
+
 
 
