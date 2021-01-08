@@ -219,7 +219,7 @@ const saldo2 = movimentacaoBancaria.reduce((acumulador, valor) => {
 
 // abaixo tem a mesma coisa em if ternario
     
-    valor > 0 ? acumulador.entradas += valor:acumulador.saidas += valor
+    valor > 0 ? acumulador.entradas += valor : acumulador.saidas += valor
 
     acumulador.saldo2 = acumulador.entradas + acumulador.saidas;
     return acumulador
