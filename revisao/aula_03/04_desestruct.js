@@ -15,6 +15,8 @@ const objPessoa = {
 }
 
 const meuNome = objPessoa.nome;
+// isso é igual isso aqui
+cont {nome} = objPessoa;
 
 // Dessa forma temos mais de linhas de código
 const { nome, s: sexo } = objPessoa;
