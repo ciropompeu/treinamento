@@ -1,5 +1,3 @@
-/*
-
 //exercicio 1 - enunciado
 //usar um array contendo números aleatórios, realizar um for/of multiplicando o valor por 3 e printar no console
 //plus: multiplicar somente os números pares
@@ -23,9 +21,6 @@ for (const numeros of valores) {
 // e depois desestruture o objeto para capturar o nome da pessoa.
 // Imprimir o nome da pessoa no console.
 
-*/
-
-
 let colecao = [
     {
         nome: 'caro',
@@ -40,13 +35,16 @@ let colecao = [
 
 ]
 
-let teco = (valor) => {
+let funct = (valor) => {
     let [, pessoa2] = valor;
     let { nome: resultado } = pessoa2;
     return resultado;
 }
 
-console.log(teco(colecao));
+console.log(funct(colecao));
+
+
+
 
 
 
