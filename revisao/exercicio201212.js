@@ -24,6 +24,8 @@ Entrega:
 A entrega desse desafio deve ser feita através de um repositório no github. (editado) 
 */
 
+// lista de pedidos
+
 const pedidos = [
     {
         nome: "antonio",
@@ -50,7 +52,11 @@ const pedidos = [
         data: 08 / 01 / 2021
     }
 ]
+
+
 const relatorio = [];
+
+// descobrindo o maior pedido
 
 const maiorPedido = (arr) => {
     let numero = arr[0].valor;
@@ -65,7 +71,7 @@ const maiorPedido = (arr) => {
     return indiceMaior;
 }
 
-console.log(maiorPedido(pedidos));
+// descibrindo o menor pedido
 
 const menorPedido = (arr) => {
     let numero = arr[0].valor;
@@ -79,11 +85,12 @@ const menorPedido = (arr) => {
     return indiceMenor;
 }
 
-console.log(menorPedido(pedidos));
+
+// descobrindo o número de pedidos
 
 const numeroPedidos = arr => arr.length;
 
-console.log(numeroPedidos(pedidos));
+// descobrindo o valor medio de todos os pedidos
 
 const valorMedio = arr =>{
     
@@ -94,7 +101,9 @@ const valorMedio = arr =>{
 
     return media/arr.length;
 }
-console.log(valorMedio(pedidos));
+
+// montando um relatorio com os dados descobertos
+// conforme enunciado retornando em JSON
 
 const montagem = arr => {
 
@@ -111,4 +120,7 @@ const montagem = arr => {
 
     return JSON.stringify(relatorio)
 }
+
+// imprimindo na tela o resultado
+
 console.log(montagem(pedidos));
