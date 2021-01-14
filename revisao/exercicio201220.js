@@ -66,14 +66,17 @@ const quantidades = arr => {
         }
 
         // isola vendas
-        let valor = arr[i].slice(arr[i].indexOf("[")+1, arr[i].lastIndexOf("]"));
-        if (arr[i].slice(0, 3) == "003") isolaVendas.push(valor.split(","));
+        if (arr[i].slice(0, 3) == "003") isolaVendas.push(arr[i].slice(arr[i].indexOf("["), arr[i].lastIndexOf("ç")));
+
     }
 
     console.log(qVendedor);
     console.log(qClientes)
     console.log(qVendas);
 }
+
+quantidades(colecao);
+console.log(isolaVendas)
 
 const calculaVendas = arr =>{
 
@@ -90,8 +93,9 @@ const calculaVendas = arr =>{
 
 }
 
-quantidades(colecao);
-console.log(isolaVendas);
 
 calculaVendas(isolaVendas);
 
+
+let isolaVendas1 = isolaVendas[1];
+console.log(isolaVendas1)
