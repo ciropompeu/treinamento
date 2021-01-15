@@ -26,7 +26,8 @@ gif config --global user.email "email" - configurar em todos os diretórios de f
 
 git clone [URL git] - é quando baixamos do repositório remoto para o repositório local
 
-git pull - baixa os arquivos do repositório remoto
+git pull origin [nome da branch] - baixa os arquivos do repositório remoto
+git pull origin main
 
 .gitignore - fazer com que o git ignore e não monitore os arquivos
 
@@ -59,7 +60,5 @@ quando vai adicionar uma nova features de um card
 
 incluir mensagem que faça sentido
 "feature/card123/ cadastro funcionario ok"
-
-
 
 */

@@ -23,7 +23,7 @@ console.log(varJsonToObj);
 
 const texto = 'Essa é a nossa string modelo             ';
 
-// lenght
+// length
 // Conta a qtd de caracteres
 console.log(texto.length);
 

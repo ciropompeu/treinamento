@@ -38,17 +38,17 @@ const itensArrayMap = arrayExemplo.map((item, index) => item + ' - ' + index)
 console.log(itensArrayMap);
 
 
-//retorna array modificado por condicoes
+//map - retorna array modificado por condicoes
 const arr = [1, 5, 7, 8, 9];
 const itensArrayMap1 = arr.map(item => item * 3);
 console.log(itensArrayMap1);
 
 
-//retorna o primeiro elemento que encontrar
+//find - retorna o primeiro elemento que encontrar
 const itensArrayFind = arrayExemplo.find((item) => item === "cachorro")
 console.log(itensArrayFind);
 
-// retornan um unico valor
+//reduce - retornan um unico valor
 // reduce recebe dois parametros
 const arrayteste = [3,5,6,7]
 const itensArrayReduce = arrayteste.reduce((pilha, item) => {
@@ -59,7 +59,7 @@ const itensArrayReduce = arrayteste.reduce((pilha, item) => {
 console.log(itensArrayReduce);
 
 
-//retorna um outro array
+//filter - retorna um outro array
 const itensArrayFilter = arrayExemplo.filter((item)=> item.length>4)
 console.log(itensArrayFilter);
 
