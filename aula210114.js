@@ -1,4 +1,7 @@
-aula anteriorgit 
+
+console.log ("aula 05");
+
+/* aula anteriorgit 
 
 uma das primeiras coisas que fazemos quando trabalhamos com git é a inicialização do repositório
 git init
@@ -13,7 +16,7 @@ git add [nome do arquivo]
 
 git commit -m "mensagem"
 
-/////
+///// aula do professor leo, o rafael não vai mais dar aula
 
 o ideal é não fazer alterações na branch MediaDeviceInfo
 uma boa prática seria criar uma branch e trabalhar paralelamento com o arquivo
@@ -22,7 +25,7 @@ uma boa prática seria criar uma branch e trabalhar paralelamento com o arquivo
 git checkout > fica trocando de branch
 git checkout -b "[nome da branch]" > cria uma nova branch nova
 
-git log-- graph > para ver de forma gráfica o que foi feito
+git log --graph > para ver de forma gráfica o que foi feito
 
 temos duas formas para apagar alterações feitas
 
@@ -53,3 +56,22 @@ rm -rf .git (vai apagar a pasta - rf "r" apagar a pasta "f" forçar)
 
 quando da git log usa o comando q para sair
 q (sair do git log)
+
+
+git rebase [nome da branch]
+
+rebase - junta as coisas do histórico da branch secundária na branch principal
+porém ele vai mexer no histório da branch principal
+ele vai colocar todas as alterações no final do histórico e não "onde" feito 
+
+merge e rebase são similares
+
+enquanto o merge cria novo comit com as alterações
+o rebase pega os comits e leva para a main no histórico
+
+o rebase é melhor em termos de organização, mas pode dar muito conflito
+o recomendado é dar um git pull (atualizar a última versão que esta no main) para aí sim dar o rebase
+
+
+git commit -am "mensagem" > da um add e faz commit tudo no mesmo
+ */
