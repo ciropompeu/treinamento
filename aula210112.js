@@ -1,3 +1,5 @@
+console.log("aula 04")
+
 /* 
 
 git - gerenciamento de repositório
