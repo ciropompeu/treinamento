@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 console.log("aula 04")
 
 /* 
@@ -65,7 +64,7 @@ incluir mensagem que faça sentido
 "feature/card123/ cadastro funcionario ok"
 
 =======
-<<<<<<< HEAD
+
 /* 
 
 git - gerenciamento de repositório

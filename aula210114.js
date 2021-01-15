@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 console.log ("aula 05");
 
 /* aula anteriorgit 
