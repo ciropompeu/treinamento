@@ -1,4 +1,5 @@
-console.log("aula 04")
+console.log("aula 04");
+console.log("comandos de git")
 
 /* 
 
