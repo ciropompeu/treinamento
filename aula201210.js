@@ -1,3 +1,4 @@
+console.log("aula 3");
 // array
 const arrayExemplo = ["gato", "cachorro", "Jacaré", "cachorro"];
 console.log(arrayExemplo);
