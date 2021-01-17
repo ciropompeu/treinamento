@@ -1,4 +1,5 @@
 console.log ("aula 05");
+console.log ("comandos adicionais para git")
 
 /* aula anteriorgit 
 
