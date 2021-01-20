@@ -1,0 +1,1 @@
+conteúdo disponível dentro do arquivo dados.txt
