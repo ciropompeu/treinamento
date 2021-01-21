@@ -1,4 +1,5 @@
-//utilizando um módulo nativo do node
+// aula sobre npm
+// utilizando um módulo nativo do node
 
 const fs = require ("fs");
 
@@ -35,3 +36,51 @@ const primeiroModulo = require("./primeiro-modulo");
 // por exemplo: const modulo = require("./primeiro-modulo/nomedoarquivo.js")
 
 console.log(primeiroModulo);
+
+
+// como requisitar um módulo
+
+let modulo = require("nomeModulo");
+modulo.propriedade;
+modulo.funcionalidade();
+
+// por convenção, o nome da variável que armazena o módulo que estamos requerendo,
+// geralmente recebe o mesmo nome do módulo, ou uma abreviação dele.
+
+// módulo nativo
+
+// para requerer um módulo nativo, usamos a função require() e passamos como
+// argumento o nome do módulo que queremos requerer.
+
+// neste link https://nodejs.org/api/
+// vamos encontrar o módulos nativos quando instalamos o node
+
+const fs = require("fs");
+
+// módulo de terceiros
+
+// para requerer um módulo de terceiros você deve primeiro instalálo usando o comando
+// npm install PACKAGE --save
+// uma vez instalado usamos a função require e passamos como argumento
+
+const moment = require("moment");
+
+// módulo criado
+
+// Para requerer um módulo criado por nós, primeiro devemos criar um arquivo com extensão .js Dentro dele escrever o script que precisamos
+// Uma vez definido nosso código, temos que deixá-lo acessível para podemos importar para nossa aplicação.
+// Para isso temos de usar um objeto no ativo module e sua propriedade exports damos a ela o nome de variável que contém informação que queremos nos portar
+// o arquivo index.js deve conter algo como
+
+const series = [
+    {titulo: "mad men", temporadas: 7},
+    {titulo: "breaking bad", temporadas: 5},
+    {titulo: "seinfield", temporadas: 9},
+]
+
+module.exports = series;
+
+// e no app.js chamamos o módulo através do comando
+
+const series = require("./series/index"); // não precisa escrever a extensão
+
