@@ -1,1 +1,3 @@
-conteúdo disponível dentro do arquivo dados.txt
+o que é um módulo
+
+um módulo é um bloco de código reutilizável, uma unidade funcional. cuja existência não altera o comportamento de outros blocos de código.
